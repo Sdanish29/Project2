@@ -1,37 +1,28 @@
-# Project 2: Shell Builtins
+#Project 2 Shell builtins
+by Shah Danish
 
-## Description
+#Description
+This is a custom built shell implemented in go, the goal was to add five new builtins into the shell.
 
-For this project we'll be adding commands to a simple shell. 
+##Features
+This shell inclues the following builtins
 
-The shell is already written, but you will choose five (5) shell builtins (or shell-adjacent) commands to rewrite into Go, and integrate into the Go shell.
+-'echo': outputs the string given as arguments
+-'pwd': Prints the current working directory
+-'clear':Clears the terminal screen
+-'ls': Lists all the contents in the current directory
+-'date': Provides the current date and time
 
-There are many builtins or shell-adjacent commands to pick from: 
-[Bourne Shell Builtins](https://www.gnu.org/software/bash/manual/html_node/Bourne-Shell-Builtins.html), 
-[Bash Builtins](https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html), and 
-[Built-in csh and tcsh Commands](https://docstore.mik.ua/orelly/linux/lnut/ch08_09.htm).
+#Install Steps
 
-Feel free to pick from `sh`, `bash`, `csh`, `tcsh`, `ksh` or `zsh` builtins... or if you have something else in mind, ping me and we'll work it out.
+1. Clone the repository
+	git clone https://github.com/sdanish29/Project2.git
+2. cd Project2
+3. go build
+4. ./Project2
 
-As an example, two shell builtins have already been added to the package builtins:
+#examples to try
 
-- `cd`
-- `env`
-
-## Steps
-
-1. Clone down the example input/output and skeleton `main.go`:
-
-    `git clone https://github.com/jh125486/CSCE4600`
- 
-2. Copy the `Project2` files to your own git project.
-
-    1. In your `go.mod`, replace "jh125486" in the module line with your GitHub name, e.g.:
-
-      - "module github.com/jh125486/CSCE4600" changes to "module github.com/CoolStudent123/CSCE4600"
-  
-    2. In the `main.go`, replace "jh125486" in the imports with your package path, e.g.:
-
-      - "github.com/jh125486/CSCE4600/Project2/builtins" changes to "github.com/CoolStudent123/CSCE4600/Project2/builtins"
-
-3. Start editing the `main.go` command switch (lines 57-64) and the package `builtins` with your chosen commands.
+echo Hello,World!
+ls
+date
